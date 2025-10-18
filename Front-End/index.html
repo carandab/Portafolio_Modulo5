@@ -65,6 +65,7 @@
     <!-- Proyectos -->
 
     <section class="container px-4 py-5 " id="proyectos">
+
         <h2 class="pb-2 border-bottom text-center">Proyectos</h2>
         <div class="row g-5 py-5">
 
@@ -77,56 +78,80 @@
             </div>
 
             <!-- Proyectos Individuales -->
-            <div class="col-md-8"  id="proyectos-individuales">
-                <div class="row g-4 py-2">
+            <div class="col-md-8 pt-5"  id="proyectos-individuales">
+                <div class="row g-4">
+                    
+                    <!-- Card 1: Diagrama Entidad-Relación con Modal -->
                     <div class="col-md-4">
-                        <div class="proyecto d-flex flex-column gap-2 p-4" id="proyecto1">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4"></div>
-                            <h4 class="fw-semibold mb-0 pb-4">Conversor de Unidades Métrico-Imperial</h4>
-                            <a href="https://github.com/carandab/portafolio_Modulo3/blob/main/Programas/programa1.py" target="_blank" class="btn-repositorio btn btn-lg">Ver en GitHub <i class="fab fa-github ms-2"></i></a>
+                        <div class="proyecto d-flex flex-column gap-3 p-4 align-items-center text-center h-100" data-bs-toggle="modal" data-bs-target="#modalDiagrama" style="cursor: pointer;">
+                            <i class="fas fa-project-diagram fa-3x"></i>
+                            <h4 class="fw-semibold mb-0">Diagrama Entidad-Relación</h4>
+                            <p class="mb-0">Click para ver el modelo de datos</p>
                         </div>
                     </div>
+
+                    <!-- Card 2: Modelo ERD con Modal -->
                     <div class="col-md-4">
-                        <div class="proyecto d-flex flex-column gap-2 p-4" id="proyecto2">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4"></div>
-                            <h4 class="fw-semibold mb-0 pb-4">Formulario Básico</h4><br>
-                            <a href="https://github.com/carandab/portafolio_Modulo3/blob/main/Programas/programa2.py" target="_blank" class="btn-repositorio btn btn-lg">Ver en GitHub <i class="fab fa-github ms-2"></i></a>
+                        <div class="proyecto d-flex flex-column gap-3 p-4 align-items-center text-center h-100" data-bs-toggle="modal" data-bs-target="#modalERD" style="cursor: pointer;">
+                            <i class="fas fa-database fa-3x"></i>
+                            <h4 class="fw-semibold mb-0">Modelo ERD</h4>
+                            <p class="mb-0">Click para ver el diseño de base de datos</p>
                         </div>
                     </div>
+
+                    <!-- Card 3: Repositorio GitHub -->
                     <div class="col-md-4">
-                        <div class="proyecto d-flex flex-column gap-2 p-4" id="proyecto3">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4"></div>
-                            <h4 class="fw-semibold mb-0 pb-4">Determinar si un N° es Positivo, Negativo o Cero</h4>
-                            <a href="https://github.com/carandab/portafolio_Modulo3/blob/main/Programas/programa3.py" target="_blank" class="btn-repositorio btn btn-lg">Ver en GitHub <i class="fab fa-github ms-2"></i></a>
+                        <div class="proyecto d-flex flex-column gap-3 p-4 align-items-center text-center h-100 justify-content-between">
+                            <div class="d-flex flex-column gap-3 align-items-center">
+                                <i class="fab fa-github fa-3x"></i>
+                                <h4 class="fw-semibold mb-0">Repositorio Portafolio Módulo 5</h4>
+                            </div>
+                            <a href="https://github.com/carandab/Portafolio_Modulo5" target="_blank" class="btn-repositorio btn btn-lg mt-3">Ver en GitHub <i class="fab fa-github ms-2"></i></a>
                         </div>
                     </div>
+
                 </div>
-                <div class="row g-4 py-2">
-                    <div class="col-md-4">
-                        <div class="proyecto d-flex flex-column gap-2 p-4" id="proyecto4">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4"></div>
-                            <h4 class="fw-semibold mb-0 pb-4">Tablas de Multiplicar y Bucle ∞</h4>
-                            <a href="https://github.com/carandab/portafolio_Modulo3/blob/main/Programas/programa4.py" target="_blank" class="btn-repositorio btn btn-lg">Ver en GitHub <i class="fab fa-github ms-2"></i></a>
+            </div>
+
+            <!-- Modal 1: Diagrama ER -->
+            <div class="modal fade" id="modalDiagrama" tabindex="-1" aria-labelledby="modalDiagramaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="modalDiagramaLabel">Diagrama Entidad-Relación</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="proyecto d-flex flex-column gap-2 p-4" id="proyecto5">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4"></div>
-                            <h4 class="fw-semibold mb-0 pb-4">Registro de Usuarios</h4><br>
-                            <a href="https://github.com/carandab/portafolio_Modulo3/blob/main/Programas/programa5.py" target="_blank" class="btn-repositorio btn btn-lg">Ver en GitHub <i class="fab fa-github ms-2"></i></a>
+                        <div class="modal-body text-center">
+                            <img src="assets/images/Esquema Entidad Relacion.png" alt="Diagrama Entidad-Relación" class="img-fluid" style="max-height: 70vh;">
+                            <p class="text-dark mt-3">Modelo de datos relacional para gestión de base de datos</p>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="proyecto d-flex flex-column gap-2 p-4" id="proyecto6">
-                            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center fs-4"></div>
-                            <h4 class="fw-semibold mb-0 pb-4">Calculadora de Área de Figuras Geométricas</h4>
-                            <a href="https://github.com/carandab/portafolio_Modulo3/blob/main/Programas/programa6.py" target="_blank" class="btn-repositorio btn btn-lg ">Ver en GitHub <i class="fab fa-github ms-2"></i></a>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- Modal 2: Modelo ERD -->
+            <div class="modal fade" id="modalERD" tabindex="-1" aria-labelledby="modalERDLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="modalERDLabel">Modelo ERD - Diseño de Base de Datos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="assets/images/M5_portafolio_ERD.png" alt="Modelo ERD" class="img-fluid" style="max-height: 70vh;">
+                            <p class="text-dark mt-3">Diseño completo del modelo de base de datos relacional</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
 
     <!-- Habilidades Técnicas  -->
